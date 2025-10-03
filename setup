@@ -532,7 +532,7 @@ echo -e "${green}Successfully downloaded badvpn${neutral}"
 else
 echo -e "${red}Failed to download badvpn${neutral}"
 fi
-wget --no-check-certificate -O /opt/bbr.sh https://raw.githubusercontent.com/PeyxDev/vip/main/files/bbr.sh
+wget --no-check-certificate -O /opt/bbr.sh https://raw.githubusercontent.com/PeyxDev/vip/main/examples/bbr.sh
 chmod 755 /opt/bbr.sh
 /opt/bbr.sh
 
