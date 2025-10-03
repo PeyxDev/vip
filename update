@@ -6,7 +6,7 @@ OR='\033[1;93m'
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/joytun21/scjoy/main/izin"
+data_ip="https://raw.githubusercontent.com/PeyxDev/vip/main/izin"
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
 domain=$(cat /etc/xray/domain)
@@ -57,7 +57,7 @@ echo "Memulai proses instalasi, mohon tunggu..."
 mkdir -p /etc/menu
 cd /etc/menu
 
-url="https://github.com/joytun21/gabut/raw/main/ssh/project.zip"
+url="https://github.com/PeyxDev/vip/project/project.zip"
 
 wget -O menu.zip "$url" >/dev/null 2>&1 &
 PID=$!
