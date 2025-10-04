@@ -409,7 +409,7 @@ echo "Memulai proses instalasi, mohon tunggu..."
 mkdir -p /etc/menu
 cd /etc/menu
 
-url="https://github.com/joytun21/gabut/raw/main/ssh/project.zip"
+url="https://github.com/PeyxDev/vip/raw/main/project/project.zip"
 
 wget -O menu.zip "$url" >/dev/null 2>&1 &
 PID=$!
