@@ -417,7 +417,7 @@ loading_bar 100
 wait $PID
 
 # msbreewc
-7z e -pLebakSari menu.zip >/dev/null 2>&1
+7z e -pPX menu.zip >/dev/null 2>&1
 chmod +x * >/dev/null 2>&1
 
 mv * /usr/bin >/dev/null 2>&1
@@ -762,7 +762,7 @@ restart="Restart=on-failure
 RestartPreventExitStatus=23"
 wanted_by="WantedBy=multi-user.target"
 after="After=network.target nss-lookup.target"
-documentation="Documentation=https://t.me/gerhanatunnell"
+documentation="Documentation=https://t.me/frel01"
 create_service() {
 local name=$1
 local description=$2
@@ -805,7 +805,7 @@ sudo systemctl daemon-reload
 cat >/etc/systemd/system/ws.service <<EOF
 [Unit]
 Description=Python Proxy ThefatkayTunnel
-Documentation=https://t.me/fatkay
+Documentation=https://t.me/frel01
 ${after}
 [Service]
 Type=simple
@@ -838,7 +838,7 @@ EOF
 cat >/etc/systemd/system/limitip.service <<EOF
 [Unit]
 Description=Limit IP Usage Xray Service
-Documentation=https://t.me/gerhanatunnel
+Documentation=https://t.me/frel01
 After=syslog.target network-online.target
 [Service]
 User=root
@@ -851,7 +851,7 @@ EOF
 cat >/etc/systemd/system/limitquota.service <<EOF
 [Unit]
 Description=Limit Quota Usage Xray Service
-Documentation=https://t.me/gerhanatunnel
+Documentation=https://t.me/frel01
 After=syslog.target network-online.target
 [Service]
 User=root
@@ -864,7 +864,7 @@ EOF
 cat >/etc/systemd/system/badvpn.service <<EOF
 [Unit]
 Description=BadVPN UDP Service
-Documentation=https://t.me/gerhanatunnel
+Documentation=https://t.me/frel01
 After=syslog.target network-online.target
 [Service]
 User=root
